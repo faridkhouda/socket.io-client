@@ -5,7 +5,7 @@ const textBlobBuilder = require("text-blob-builder");
 const env = require("./support/env");
 
 describe("connection", function () {
-  this.timeout(10000);
+  this.timeout(70000);
 
   it("should connect to localhost", (done) => {
     const socket = io({ forceNew: true });
