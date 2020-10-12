@@ -13,7 +13,12 @@
     "dist/",
     "build/"
   ],
+  "type": "commonjs",
   "main": "./build/index.js",
+  "exports": {
+    "import": "./wrapper.mjs",
+    "require": "./build/index.js"
+  },
   "types": "./build/index.d.ts",
   "dependencies": {
     "backo2": "1.0.2",
